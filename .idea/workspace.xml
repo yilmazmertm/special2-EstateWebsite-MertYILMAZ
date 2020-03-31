@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56e7dcf2-8ec8-4893-81cd-1f604b0fc0c4" name="Default Changelist" comment="Header Değişti">
+    <list default="true" id="56e7dcf2-8ec8-4893-81cd-1f604b0fc0c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite1/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -101,7 +119,8 @@
       <workItem from="1584884875469" duration="141000" />
       <workItem from="1585295127083" duration="17000" />
       <workItem from="1585477024892" duration="12150000" />
-      <workItem from="1585499525305" duration="541000" />
+      <workItem from="1585499525305" duration="1281000" />
+      <workItem from="1585680961154" duration="2030000" />
     </task>
     <task id="LOCAL-00001" summary="Header Değişti">
       <created>1585499746557</created>
@@ -110,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585499746557</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Header Değişti">
+      <created>1585500133588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585500133588</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,10 +151,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="526" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/1920.0.1280.689@0.0.1536.834" timestamp="1582909794772" />
-    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1585499893634">
+    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1585500133013">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585499893634" />
+    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585500133013" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1585295139912">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -154,6 +180,10 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1584779759011" />
     <state x="170" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585487366330" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1585500155959">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585500155959" />
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585500113595">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
