@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e7dcf2-8ec8-4893-81cd-1f604b0fc0c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TEMPS/fashi/fashi/blank.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/aboutus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/referances.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0004_auto_20200404_1412.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/migrations/0005_auto_20200404_1412.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -126,7 +125,8 @@
       <workItem from="1585499525305" duration="1281000" />
       <workItem from="1585680961154" duration="2485000" />
       <workItem from="1585773261343" duration="4298000" />
-      <workItem from="1585779270404" duration="1597000" />
+      <workItem from="1585779270404" duration="1880000" />
+      <workItem from="1585997983245" duration="3794000" />
     </task>
     <task id="LOCAL-00001" summary="Header Değişti">
       <created>1585499746557</created>
@@ -149,7 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585683123598</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="implementing contact, aboutus and references page - video 12">
+      <created>1585781018622</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585781018622</updated>
+    </task>
+    <task id="LOCAL-00005" summary="bug fix on contact page">
+      <created>1585781144832</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585781144832</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +172,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Header Değişti" />
     <MESSAGE value="Integrating CKeditor in Admin Template - video 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrating CKeditor in Admin Template - video 11" />
+    <MESSAGE value="implementing contact, aboutus and references page - video 12" />
+    <MESSAGE value="bug fix on contact page" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix on contact page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="526" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582909794772">
@@ -169,10 +185,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1585776413716" />
-    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2" timestamp="1585683122912">
+    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2" timestamp="1585781143876">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585683122912" />
+    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585781143876" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1585295139912">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -193,15 +209,16 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1237" height="151" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1584885016888" />
-    <state x="510" y="101" key="SettingsEditor" timestamp="1585773567678">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="638" y="127" key="SettingsEditor" timestamp="1585998621823">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1584779759011" />
     <state x="510" y="101" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585773567678" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1585683127834">
+    <state x="638" y="127" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585998621823" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1585781147657">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585683127834" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585781147657" />
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585500113595">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
