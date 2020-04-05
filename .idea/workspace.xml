@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e7dcf2-8ec8-4893-81cd-1f604b0fc0c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/migrations/0004_auto_20200404_1412.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/migrations/0005_auto_20200404_1412.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/migrations/0005_auto_20200405_1556.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/migrations/0006_auto_20200405_1556.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +28,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -126,7 +132,9 @@
       <workItem from="1585680961154" duration="2485000" />
       <workItem from="1585773261343" duration="4298000" />
       <workItem from="1585779270404" duration="1880000" />
-      <workItem from="1585997983245" duration="3794000" />
+      <workItem from="1585997983245" duration="4599000" />
+      <workItem from="1586024536841" duration="444000" />
+      <workItem from="1586084118994" duration="2909000" />
     </task>
     <task id="LOCAL-00001" summary="Header Değişti">
       <created>1585499746557</created>
@@ -163,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585781144832</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="making a contact form and receiving messages - vid 13">
+      <created>1586001983881</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586001983881</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,9 +189,14 @@
     <MESSAGE value="Integrating CKeditor in Admin Template - video 11" />
     <MESSAGE value="implementing contact, aboutus and references page - video 12" />
     <MESSAGE value="bug fix on contact page" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fix on contact page" />
+    <MESSAGE value="making a contact form and receiving messages - vid 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="making a contact form and receiving messages - vid 13" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586084196406">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1586084196406" />
     <state x="526" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582909794772">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -185,10 +205,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1585776413716" />
-    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2" timestamp="1585781143876">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="491" y="11" width="949" height="816" key="CommitChangelistDialog2" timestamp="1586001983145">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585781143876" />
+    <state x="491" y="11" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1586001983145" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1585295139912">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -215,10 +236,11 @@
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1584779759011" />
     <state x="510" y="101" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1585773567678" />
     <state x="638" y="127" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1585998621823" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1585781147657">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="451" y="189" key="Vcs.Push.Dialog.v2" timestamp="1586001986929">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585781147657" />
+    <state x="451" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1586001986929" />
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585500113595">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
