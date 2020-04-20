@@ -122,7 +122,7 @@
                         {% load mptt_tags %}
                         {% recursetree category %}
                                 <li>
-                                    <a href="#">{{ node.title }}</a>
+                                    <a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
                                     {% if not node.is_leaf_node %}
                                         <ul class="children">
                                             <li><a href="#">{{ children }}</a></li>

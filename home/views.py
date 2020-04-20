@@ -11,8 +11,11 @@ from product.models import Product, Category
 def index(request):
     setting = Setting.objects.get(pk = 1)
     sliderdata = Product.objects.all()[:4]
+    dayproducts = Product.objects.all()[:3]
+    lastproducts = Product.objects.all().order_by('-id')[:3]
     category = Category.objects.all()
-    context = {'setting': setting,'category' : category, 'page': 'home', 'sliderdata': sliderdata}
+    context = {'setting': setting,'category' : category, 'page': 'home', 'sliderdata': sliderdata,
+               'dayproducts' : dayproducts, 'lastproducts' : lastproducts}
     return render(request, 'index.html', context)
 
 def aboutus(request):
@@ -38,6 +41,13 @@ def contact(request):
             data.save()
             messages.success(request, 'Mesajınız gönderilmiştir.')
             return HttpResponseRedirect('/contact')
+
+def category_products(request, id, slug):
+    category = Category.objects.all()
+    categorydata = Category.objects.get(pk = id)
+    products = Product.objects.filter(category_id = id)
+    context = {'products' : products, 'category' : category, 'categorydata' : categorydata}
+    return render(request, 'products.html', context)
 
 
     setting = Setting.objects.get(pk = 1)

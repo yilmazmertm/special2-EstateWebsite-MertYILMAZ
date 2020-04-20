@@ -2,13 +2,245 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e7dcf2-8ec8-4893-81cd-1f604b0fc0c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/home/templates/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/3fcd99d0c8b91f50f06b0715ce73ad297a6fc258/_base.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/3fcd99d0c8b91f50f06b0715ce73ad297a6fc258/_mixins.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/3fcd99d0c8b91f50f06b0715ce73ad297a6fc258/_variables.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/58d96aa2f3ca6831ea65d734678a63e337572170/style.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/8d96c3a14a0bb8e118b2f4f0ff234b926fa1678e/_buttons.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/8d96c3a14a0bb8e118b2f4f0ff234b926fa1678e/_responsive.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/8d96c3a14a0bb8e118b2f4f0ff234b926fa1678e/_sections.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/8d96c3a14a0bb8e118b2f4f0ff234b926fa1678e/_typography.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/ef29edb4d21face4cdada241cd6b836dafbe5b2a/_footer.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/ef29edb4d21face4cdada241cd6b836dafbe5b2a/_header.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/.sass-cache/ef29edb4d21face4cdada241cd6b836dafbe5b2a/_nav.scssc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/account.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/blog-archive-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/blog-archive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/blog-single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/jquery.simpleLens.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/jquery.smartmenus.bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/nouislider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/sequence-theme.modern-slide-in.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/bridge-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/dark-red-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/default-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/green-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/lite-blue-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/orange-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/pink-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/purple-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/red-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/css/theme-color/yellow-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/client-brand-css3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/client-brand-html5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/client-brand-java.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/client-brand-joomla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/client-brand-jquery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/client-brand-wordpress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/close-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/electronics/electronic-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/electronics/electronic-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/electronics/electronic-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/electronics/electronic-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/electronics/electronic-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/electronics/electronic-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/electronics/electronic-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/electronics/electronic-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/fashion-banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/fashion/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/fashion/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/fashion/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/fashion/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/fashion/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/fashion/fashion-header-bg-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/flag/english.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/flag/french.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/man-small-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/man/polo-shirt-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/man/polo-shirt-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/man/polo-shirt-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/man/polo-shirt-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/man/polo-shirt-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/man/polo-shirt-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/man/t-shirt-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/paypal.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/promo-banner-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/promo-banner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/promo-banner-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/promo-banner-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/promo-banner-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/bt-next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/bt-next@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/bt-prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/slider/bt-prev@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/sports/sport-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/sports/sport-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/sports/sport-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/sports/sport-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/sports/sport-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/sports/sport-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/sports/sport-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/sports/sport-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/testimonial-bg-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/testimonial-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/testimonial-img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/testimonial-img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/large/polo-shirt-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/large/polo-shirt-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/large/polo-shirt-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/large/polo-shirt-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/medium/polo-shirt-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/medium/polo-shirt-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/medium/polo-shirt-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/medium/polo-shirt-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/thumbnail/polo-shirt-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/thumbnail/polo-shirt-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/thumbnail/polo-shirt-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/view-slider/thumbnail/polo-shirt-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/woman-small-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/woman-small-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/women/girl-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/women/girl-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/women/girl-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/women/girl-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/women/girl-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/women/girl-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/img/women/girl-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/jquery.simpleGallery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/jquery.simpleLens.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/jquery.smartmenus.bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/jquery.smartmenus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/nouislider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/sequence-theme.modern-slide-in.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/sequence.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/js/slick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/product-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/base/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/base/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/base/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/layouts/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/layouts/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/layouts/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/modules/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/modules/_responsive.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/modules/_sections.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/modules/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/dailyShop/wishlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/icons/cross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/icons/key.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/icons/tick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/buttons/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/fancy-type/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/fancy-type/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/doc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/feed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/im.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/visited.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/icons/xls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/link-icons/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/rtl/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/plugins/rtl/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/src/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/src/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/src/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/src/ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/src/print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/src/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/blueprint-css/src/typography.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/assets/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shAutoloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushAS3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushAppleScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushBash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushCSharp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushColdFusion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushCpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushCss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushDelphi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushDiff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushErlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushGroovy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushJScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushJava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushJavaFX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPerl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPhp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPlain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPowerShell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushPython.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushRuby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushSass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushScala.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushSql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushVb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shBrushXml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/scripts/shLegacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCore.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCoreDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCoreEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCoreEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCoreFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCoreMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCoreMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shCoreRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shThemeDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shThemeDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shThemeEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shThemeEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shThemeFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shThemeMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shThemeMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/help/DOCUMENTATION/syntax-highlighter/styles/shThemeRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/DailyShop Free Website Template - Free-CSS.com/MarkUps-dailyShop/license.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +298,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -77,6 +309,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Django\mysite1\home\templates" />
       <recent name="C:\Django\mysite1\product" />
     </key>
   </component>
@@ -134,7 +367,8 @@
       <workItem from="1586024536841" duration="444000" />
       <workItem from="1586084118994" duration="3204000" />
       <workItem from="1587152663307" duration="2613000" />
-      <workItem from="1587208068870" duration="4304000" />
+      <workItem from="1587208068870" duration="4399000" />
+      <workItem from="1587386309216" duration="5498000" />
     </task>
     <task id="LOCAL-00001" summary="Header Değişti">
       <created>1585499746557</created>
@@ -185,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586091709908</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implement mptt / I should check the navbar later - vid 15">
+      <created>1587213914907</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587213914907</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +439,8 @@
     <MESSAGE value="bug fix on contact page" />
     <MESSAGE value="making a contact form and receiving messages - vid 13" />
     <MESSAGE value="workin on a slider and making slug fields - vid 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="workin on a slider and making slug fields - vid 14" />
+    <MESSAGE value="implement mptt / I should check the navbar later - vid 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement mptt / I should check the navbar later - vid 15" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586084196406">
@@ -213,15 +455,16 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1585776413716" />
-    <state x="744" y="147" width="949" height="816" key="CommitChangelistDialog2" timestamp="1587213863812">
+    <state x="744" y="147" width="949" height="816" key="CommitChangelistDialog2" timestamp="1587213914222">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585781143876" />
-    <state x="744" y="147" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587213863812" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1585295139912">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="744" y="147" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587213914222" />
+    <state x="686" y="217" key="FileChooserDialogImpl" timestamp="1587386538952">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1585295139912" />
+    <state x="686" y="217" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1587386538952" />
     <state width="1237" height="151" key="GridCell.Tab.0.bottom" timestamp="1584885016888">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
@@ -238,17 +481,17 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state width="1237" height="151" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1584885016888" />
-    <state x="638" y="127" key="SettingsEditor" timestamp="1587209565642">
+    <state x="638" y="127" key="SettingsEditor" timestamp="1587390249246">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1584779759011" />
     <state x="231" y="120" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1587155839245" />
-    <state x="638" y="127" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587209565642" />
-    <state x="451" y="189" key="Vcs.Push.Dialog.v2" timestamp="1586091712061">
+    <state x="638" y="127" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587390249246" />
+    <state x="451" y="189" key="Vcs.Push.Dialog.v2" timestamp="1587213917435">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585781147657" />
-    <state x="451" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1586091712061" />
+    <state x="451" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1587213917435" />
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585500113595">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
