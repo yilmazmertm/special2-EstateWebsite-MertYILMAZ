@@ -162,8 +162,8 @@
                             <div class="product-thumbs">
                                 <div class="product-thumbs-track ps-slider owl-carousel">
                                     {% for rs in images %}
-                                    <div class="pt {% if forloop.counter == 0 %} active {%  endif %}" data-imgbigurl="{{ rs.image.url }}"><img
-                                            src="{{ rs.image.url }}" alt=""></div>
+                                        <div class="pt {% if forloop.counter == 0 %} active {%  endif %}" data-imgbigurl="{{ rs.image.url }}"><img
+                                                src="{{ rs.image.url }}" alt=""></div>
                                     {% endfor %}
                                 </div>
                             </div>
@@ -289,65 +289,50 @@
                                     <div class="customer-review-option">
                                         <h4>2 Comments</h4>
                                         <div class="comment-option">
+
+
+                                            {% for rs in comments %}
                                             <div class="co-item">
                                                 <div class="avatar-pic">
                                                     <img src="img/product-single/avatar-1.png" alt="">
                                                 </div>
                                                 <div class="avatar-text">
-                                                    <div class="at-rating">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                    <h5>Brandon Kelley <span>27 Aug 2019</span></h5>
-                                                    <div class="at-reply">Nice !</div>
+
+                                                    <h5>{{ rs.user_id }}<span>{{ rs.created_at}}</span></h5>
+                                                    <div class="at-reply">{{ rs.comment}}</div>
                                                 </div>
                                             </div>
-                                            <div class="co-item">
-                                                <div class="avatar-pic">
-                                                    <img src="img/product-single/avatar-2.png" alt="">
-                                                </div>
-                                                <div class="avatar-text">
-                                                    <div class="at-rating">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star-o"></i>
-                                                    </div>
-                                                    <h5>Roy Banks <span>27 Aug 2019</span></h5>
-                                                    <div class="at-reply">Nice !</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="personal-rating">
-                                            <h6>Your Ratind</h6>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
-                                            </div>
+                                            {% endfor %}
+
+
                                         </div>
                                         <div class="leave-comment">
                                             <h4>Leave A Comment</h4>
-                                            <form action="#" class="comment-form">
+
+
+                                            <form action="/product/addcomment/{{ product.id }}" method="post" class="comment-form">
+                                                {% csrf_token %}
                                                 <div class="row">
-                                                    <div class="col-lg-6">
-                                                        <input type="text" placeholder="Name">
+                                                    <div class="col-lg-8">
+                                                        <input class="input" type="text" name="subject" id="id_subject" placeholder="Subject">
                                                     </div>
-                                                    <div class="col-lg-6">
-                                                        <input type="text" placeholder="Email">
+                                                    <div class="col-lg-4">
+                                                        <input class="input" type="text" name="rate" id="id_rate" placeholder="Your rate">
                                                     </div>
+
                                                     <div class="col-lg-12">
-                                                        <textarea placeholder="Messages"></textarea>
+                                                        <textarea class="input" name="comment" id="id_comment" placeholder="Comment"></textarea>
+                                                        {% if user.id is not None %}
                                                         <button type="submit" class="site-btn">Send message</button>
+                                                        {% else %}
+                                                            Yorum Eklemek için giriş yapınız.
+                                                        {% endif %}
                                                     </div>
                                                 </div>
                                             </form>
+
+
+
                                         </div>
                                     </div>
                                 </div>

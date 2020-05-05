@@ -2,8 +2,12 @@
   <dictionary name="yilma">
     <words>
       <w>aboutus</w>
+      <w>addcomment</w>
       <w>ckeditor</w>
+      <w>evet</w>
+      <w>hayır</w>
       <w>referances</w>
+      <w>yeni</w>
     </words>
   </dictionary>
 </component>

@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e7dcf2-8ec8-4893-81cd-1f604b0fc0c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/yilma.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/migrations/0008_comment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yilma.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yilma.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codewars.py" beforeDir="false" afterPath="$PROJECT_DIR$/codewars.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +59,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YReGsoQFEQb8FRywS3R9q076UI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -170,7 +174,10 @@
       <workItem from="1587473204923" duration="3550000" />
       <workItem from="1587497014406" duration="39000" />
       <workItem from="1588576594466" duration="4954000" />
-      <workItem from="1588617330596" duration="2639000" />
+      <workItem from="1588617330596" duration="4948000" />
+      <workItem from="1588671960410" duration="174000" />
+      <workItem from="1588672189291" duration="3771000" />
+      <workItem from="1588703569927" duration="2083000" />
     </task>
     <task id="LOCAL-00001" summary="Header Değişti">
       <created>1585499746557</created>
@@ -235,13 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587392326316</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="implementing product_detail page - vid 18">
+      <created>1588620023687</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588620023687</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Header Değişti" />
     <MESSAGE value="Integrating CKeditor in Admin Template - video 11" />
     <MESSAGE value="implementing contact, aboutus and references page - video 12" />
@@ -250,7 +265,8 @@
     <MESSAGE value="workin on a slider and making slug fields - vid 14" />
     <MESSAGE value="implement mptt / I should check the navbar later - vid 15" />
     <MESSAGE value="listing items at index page, I should add more items - vid 17&amp;18" />
-    <option name="LAST_COMMIT_MESSAGE" value="listing items at index page, I should add more items - vid 17&amp;18" />
+    <MESSAGE value="implementing product_detail page - vid 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing product_detail page - vid 18" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586084196406">
@@ -261,14 +277,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="526" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834/1920.0.1280.689@0.0.1536.834" timestamp="1582909794772" />
+    <state x="449" y="168" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588671972067">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="449" y="168" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1588671972067" />
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585776413716">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1585776413716" />
-    <state x="744" y="147" width="949" height="816" key="CommitChangelistDialog2" timestamp="1587392325056">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2" timestamp="1588620022929">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1585781143876" />
+    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588620022929" />
     <state x="744" y="147" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587392325056" />
     <state x="686" y="217" key="FileChooserDialogImpl" timestamp="1587386538952">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -295,16 +315,17 @@
     </state>
     <state width="1237" height="151" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1584885016888" />
     <state width="1877" height="267" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1587475920664" />
-    <state x="317" y="120" key="SettingsEditor" timestamp="1588617504916">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="317" y="124" key="SettingsEditor" timestamp="1588621014454">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1584779759011" />
     <state x="317" y="120" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1588617504916" />
+    <state x="317" y="124" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1588621014454" />
     <state x="638" y="127" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587497046429" />
-    <state x="451" y="189" key="Vcs.Push.Dialog.v2" timestamp="1587392329022">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588620026302">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1585781147657" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588620026302" />
     <state x="451" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1587392329022" />
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585500113595">
       <screen x="0" y="0" width="1536" height="834" />
