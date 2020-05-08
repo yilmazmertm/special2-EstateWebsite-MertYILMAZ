@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e7dcf2-8ec8-4893-81cd-1f604b0fc0c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/product_search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/yilma.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/yilma.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mysite1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mysite1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite1/urls.py" afterDir="false" />
@@ -174,7 +176,9 @@
       <workItem from="1588672189291" duration="3771000" />
       <workItem from="1588703569927" duration="2115000" />
       <workItem from="1588871331702" duration="151000" />
-      <workItem from="1588936415202" duration="2827000" />
+      <workItem from="1588936415202" duration="3526000" />
+      <workItem from="1588954378425" duration="3914000" />
+      <workItem from="1588961086458" duration="2623000" />
     </task>
     <task id="LOCAL-00001" summary="Header Değişti">
       <created>1585499746557</created>
@@ -253,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588705692032</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="search form - vid 20">
+      <created>1588946072132</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588946072132</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,7 +282,8 @@
     <MESSAGE value="listing items at index page, I should add more items - vid 17&amp;18" />
     <MESSAGE value="implementing product_detail page - vid 18" />
     <MESSAGE value="comments - vid 19" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments - vid 19" />
+    <MESSAGE value="search form - vid 20" />
+    <option name="LAST_COMMIT_MESSAGE" value="search form - vid 20" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586084196406">
@@ -290,10 +302,11 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1585776413716" />
-    <state x="491" y="12" width="949" height="816" key="CommitChangelistDialog2" timestamp="1588705691163">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="393" y="10" width="949" height="816" key="CommitChangelistDialog2" timestamp="1588946071487">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588620022929" />
+    <state x="393" y="10" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1588946071487" />
     <state x="744" y="147" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1587392325056" />
     <state x="491" y="12" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1588705691163" />
     <state x="686" y="217" key="FileChooserDialogImpl" timestamp="1587386538952">
@@ -328,10 +341,11 @@
     <state x="317" y="120" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1588617504916" />
     <state x="317" y="124" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1588621014454" />
     <state x="638" y="127" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587497046429" />
-    <state x="451" y="194" key="Vcs.Push.Dialog.v2" timestamp="1588705695551">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="361" y="155" key="Vcs.Push.Dialog.v2" timestamp="1588946074797">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588620026302" />
+    <state x="361" y="155" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1588946074797" />
     <state x="451" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1587392329022" />
     <state x="451" y="194" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1588705695551" />
     <state x="578" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585500113595">

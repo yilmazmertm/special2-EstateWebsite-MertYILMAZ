@@ -1,4 +1,10 @@
 {% load static %}
+<!-- jQuery !-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"> </script>
+<!-- jQuery UI !-->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
 <!-- Header Section Begin -->
 <header class="header-section">
     <div class="header-top">
@@ -37,21 +43,52 @@
             <div class="row">
                 <div class="col-lg-2 col-md-2">
                     <div class="logo">
-                        <a href="./index.html">
+                        <a href="{% url 'index' %}">
                             <img src="{% static 'img/logo.png' %}" alt="">
                         </a>
                     </div>
                 </div>
+                <script>
+
+                    $(function() {
+                        $("#query").autocomplete({
+                            source: "/search_auto/",
+                            select: function (event, ui) { //item selected
+                                AutoCompleteSelectHandler(event, ui)
+                            },
+                            minLength: 2,
+                        });
+                    });
+
+                    function AutoCompleteSelectHandler(event, ui)
+                    {
+                        var selectedObj = ui.item;
+                    }
+
+                </script>
                 <div class="col-lg-7 col-md-7">
+                    {% load mptt_tags %}
                     <div class="advanced-search">
-                        <button type="button" class="category-btn">Bütün Evler</button>
-                        <div class="input-group">
-                            <form action="/search/" method="post">
+                        <form action="{% url 'product_search' %}" method="post">
+                            <select name="catid" type="button" class="category-btn">
+                                <option value="0">
+                                    Kategoriler
+                                </option>
+                                {% recursetree category %}
+                                    {% if node.is_leaf_node %}<option value="{{ node.id }}"> {{ node.title }} </option> {% endif %}
+                                    {% if not node.is_leaf_node %}
+                                        <optgroup label="{{ node.title }}">
+                                            {{ children }}
+                                        </optgroup>
+                                    {% endif %}
+                                {% endrecursetree %}
+                            </select>
+                            <div class="input-group">
                                 {% csrf_token %}
-                                <input name="query" type="text" placeholder="Nasıl bir eve ihtiyacın var ?">
-                                <button type="button"><i class="ti-search"></i></button>
-                            </form>
-                        </div>
+                                <input id="query" name="query" type="text" placeholder="Nasıl bir eve ihtiyacın var?">
+                                <button type="submit"><i class="ti-search"></i></button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col-lg-3 text-right col-md-3">
@@ -155,9 +192,9 @@
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="#">Pages</a>
                         <ul class="dropdown">
-                            <li><a href="./contact">İletişim</a></li>
-                            <li><a href="./referances">Referanslar </a></li>
-                            <li><a href="/aboutus">Hakkımızda </a></li>
+                            <li><a href="{% url 'contact' %}">İletişim</a></li>
+                            <li><a href="{% url 'referances' %}">Referanslar </a></li>
+                            <li><a href="{% url 'aboutus' %}">Hakkımızda </a></li>
                         </ul>
                     </li>
                 </ul>
