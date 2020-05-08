@@ -44,10 +44,13 @@
                 </div>
                 <div class="col-lg-7 col-md-7">
                     <div class="advanced-search">
-                        <button type="button" class="category-btn">All Categories / Github</button>
+                        <button type="button" class="category-btn">Bütün Evler</button>
                         <div class="input-group">
-                            <input type="text" placeholder="What do you need?">
-                            <button type="button"><i class="ti-search"></i></button>
+                            <form action="/search/" method="post">
+                                {% csrf_token %}
+                                <input name="query" type="text" placeholder="Nasıl bir eve ihtiyacın var ?">
+                                <button type="button"><i class="ti-search"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -121,14 +124,14 @@
                         <li class="active"><a href="#">Women’s Clothing</a></li>
                         {% load mptt_tags %}
                         {% recursetree category %}
-                                <li>
-                                    <a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
-                                    {% if not node.is_leaf_node %}
-                                        <ul class="children">
-                                            <li><a href="#">{{ children }}</a></li>
-                                        </ul>
-                                    {% endif %}
-                                </li>
+                            <li>
+                                <a href="/category/{{ node.id }}/{{ node.slug }}">{{ node.title }}</a>
+                                {% if not node.is_leaf_node %}
+                                    <ul class="children">
+                                        <li><a href="#">{{ children }}</a></li>
+                                    </ul>
+                                {% endif %}
+                            </li>
                         {% endrecursetree %}
                         <li><a href="#">Men’s Clothing</a></li>
                         <li><a href="#">Underwear</a></li>
