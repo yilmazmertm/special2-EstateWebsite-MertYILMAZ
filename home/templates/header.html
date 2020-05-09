@@ -20,7 +20,15 @@
                 </div>
             </div>
             <div class="ht-right">
-                <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
+
+                {% if user.id is not None %}
+                <a href="#" class="login-panel"><i class="fa fa-user"></i>{{ user.first_name }}</a>
+                    <a href="{% url 'logout_view' %}" class="login-panel"><i class="glyphicon-log-out"></i>Logout</a>
+                {% else %}
+                    <a href="/signup/" class="login-panel"><i class="fa fa-user"></i>Sign up !</a>
+                <a href="/login/" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                {% endif %}
+
                 <div class="lan-selector">
                     <select class="language_drop" name="countries" id="countries" style="width:300px;">
                         <option value='yt' data-image="img/flag-1.jpg" data-imagecss="flag yt"
@@ -33,7 +41,6 @@
                     <a href="#"><i class="ti-facebook"></i></a>
                     <a href="#"><i class="ti-twitter-alt"></i></a>
                     <a href="#"><i class="ti-linkedin"></i></a>
-                    <a href="#"><i class="ti-pinterest"></i></a>
                 </div>
             </div>
         </div>
@@ -189,12 +196,19 @@
                             <li><a href="#">Kid's</a></li>
                         </ul>
                     </li>
-                    <li><a href="./blog.html">Blog</a></li>
                     <li><a href="#">Pages</a>
                         <ul class="dropdown">
                             <li><a href="{% url 'contact' %}">İletişim</a></li>
                             <li><a href="{% url 'referances' %}">Referanslar </a></li>
                             <li><a href="{% url 'aboutus' %}">Hakkımızda </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./blog.html">My Account</a>
+                    <ul class="dropdown">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="{% url 'logout_view' %}">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
