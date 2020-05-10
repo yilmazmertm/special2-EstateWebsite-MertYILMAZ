@@ -8,6 +8,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('product/', include('product.urls')),
     path('home/', include('home.urls')),
+    path('user/', include('user.urls')),
     path('contact/', views.contact, name = 'contact'),
     path('aboutus/', views.aboutus, name = 'aboutus'),
     path('referances/', views.referances, name = 'referances'),

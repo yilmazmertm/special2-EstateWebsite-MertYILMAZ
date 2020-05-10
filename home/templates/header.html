@@ -203,11 +203,8 @@
                             <li><a href="{% url 'aboutus' %}">Hakkımızda </a></li>
                         </ul>
                     </li>
-                    <li><a href="./blog.html">My Account</a>
+                    <li><a href="{% url 'user_index' %}">My Account</a>
                     <ul class="dropdown">
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">My Account</a></li>
                             <li><a href="{% url 'logout_view' %}">Logout</a></li>
                         </ul>
                     </li>
