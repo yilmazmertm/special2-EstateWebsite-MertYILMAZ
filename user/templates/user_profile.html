@@ -40,7 +40,7 @@
                                         </div>
                                         <div class="ci-text">
                                             <span>Name Surname</span>
-                                            <p>{{ profile.user.first_name}}</p>
+                                            <p>{{ profile.user.first_name}} {{ profile.user.last_name }}</p>
                                         </div>
                                     </div>
                                     <div class="cw-item">
@@ -68,6 +68,22 @@
                                         <div class="ci-text">
                                             <span>Profile Picture</span>
                                             <p><img src="{{ profile.image.url }}" style="height: 150px; width: 100px"></p>
+                                        </div>
+                                    </div>
+                                    <div class="cw-item">
+                                        <div class="ci-icon">
+                                            <i class="ti-email"></i>
+                                        </div>
+                                        <div class="ci-text">
+                                            <span>Change Information</span>
+                                            <p>
+                                            <tr>
+                                                <th class="text-left">
+                                                    <a href="/user/update" class="primary-btn">Update Profile</a>
+                                                    <a href="/user/password" class="primary-btn">Change Password</a>
+                                                </th>
+                                            </tr>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>

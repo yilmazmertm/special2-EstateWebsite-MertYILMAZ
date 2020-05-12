@@ -24,13 +24,15 @@ def index(request):
 
 def aboutus(request):
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting, 'page': 'aboutus'}
+    category = Category.objects.all()
+    context = {'category': category,'setting': setting, 'page': 'aboutus'}
     return render(request, 'aboutus.html', context)
 
 
 def referances(request):
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting, 'page': 'referances'}
+    category = Category.objects.all()
+    context = {'category': category, 'setting': setting, 'page': 'referances'}
     return render(request, 'referances.html', context)
 
 
@@ -47,6 +49,13 @@ def contact(request):
             data.save()
             messages.success(request, 'Mesajınız gönderilmiştir.')
             return HttpResponseRedirect('/contact')
+    category = Category.objects.all()
+    setting = Setting.objects.get(pk=1)
+    form = ContactFormu()
+    context = {'category': category, 'setting': setting, 'form': form}
+    return render(request, 'contact.html', context)
+
+
 
 
 def category_products(request, id, slug):
