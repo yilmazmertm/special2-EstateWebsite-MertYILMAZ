@@ -1,12 +1,13 @@
 import json
 
 from django.contrib.auth import logout, authenticate, login
+from django.forms import modelformset_factory
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib import messages
 
 # Create your views here.
-from home.forms import SearchForm, SignUpForm, AddEstateForm
+from home.forms import SearchForm, SignUpForm, AddEstateForm, AddEstateImages
 from home.models import Setting, ContactFormMessage, ContactFormu
 from product.models import Product, Category, Images, Comment
 
@@ -153,9 +154,11 @@ def signup_view(request):
 
 
 def add(request):
+    ImageFormSet = modelformset_factory(Images, fields=('image',), extra=5)
     if request.method == 'POST':
         form = AddEstateForm(request.POST, request.FILES)
-        if form.is_valid():
+        formset = ImageFormSet(request.POST, request.FILES)
+        if form.is_valid() and formset.is_valid():
             current_user = request.user
             data = Product()
             data.user_id = current_user.id
@@ -172,6 +175,13 @@ def add(request):
             data.detail = form.cleaned_data['detail']
             data.slug = str(data.category_id) + str(data.title) + str(data.price)
             data.status = 'False'
+            for f in formset:
+                try:
+                    photo = Images(product= product, title=str(id) + 'hello', image=f.cleaned_data['image'])
+                    photo.save()
+                except Exception as e:
+                    break
+
             data.save()
             messages.success(request, 'Your content is inserted')
             return HttpResponseRedirect('/add')
@@ -181,9 +191,11 @@ def add(request):
     else:
         category = Category.objects.all()
         form = AddEstateForm
+        formset = ImageFormSet(queryset=Images.objects.none())
         context = {
             'category': category,
-            'form': form
+            'form': form,
+            'formset': formset
         }
         return render(request, 'add.html', context)
 
@@ -201,15 +213,16 @@ def edit(request, id):
             return HttpResponseRedirect('/edit/' + str(id))
     else:
         category = Category.objects.all()
-        form = AddEstateForm(instance= product)
+        form = AddEstateForm(instance=product)
         context = {
             'category': category,
             'form': form
         }
         return render(request, 'add.html', context)
 
+
 def delete(request, id):
     current_user = request.user
-    Product.objects.filter(id=id, user_id= current_user.id).delete()
+    Product.objects.filter(id=id, user_id=current_user.id).delete()
     messages.success(request, 'Satılık ev ilanı kaldırıldı')
     return HttpResponseRedirect('/user/list_estate')

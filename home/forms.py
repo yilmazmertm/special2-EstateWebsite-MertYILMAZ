@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.forms import ModelForm, TextInput
-from product.models import Product
+from product.models import Product, Images
 
 
 class SearchForm(forms.Form):
@@ -26,3 +26,8 @@ class AddEstateForm(ModelForm):
         model = Product
         fields = ('category', 'title', 'keywords', 'description','image', 'price', 'm2', 'room_number', 'age_of_building',
                   'city', 'detail')
+
+class AddEstateImages(ModelForm):
+    class Meta:
+        model = Images
+        fields = ('title', 'image')
