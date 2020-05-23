@@ -1,6 +1,8 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
+from django.forms import ModelForm, TextInput
+from product.models import Product
 
 
 class SearchForm(forms.Form):
@@ -18,3 +20,9 @@ class SignUpForm(UserCreationForm):
         model = User
         fields = ('username', 'email', 'first_name', 'last_name', 'password1', 'password2')
 
+
+class AddEstateForm(ModelForm):
+    class Meta:
+        model = Product
+        fields = ('category', 'title', 'keywords', 'description','image', 'price', 'm2', 'room_number', 'age_of_building',
+                  'city', 'detail')

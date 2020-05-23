@@ -43,7 +43,7 @@ class Category(MPTTModel):
 class Product(models.Model):
     STATUS = (('True', 'Evet'), ('False', 'Hayır'))
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=150)
     keywords = models.CharField(blank=True, max_length=255)
     description = models.CharField(blank=True, max_length=255)
@@ -107,3 +107,4 @@ class CommentForm(ModelForm):
     class Meta:
         model = Comment
         fields = ['subject', 'comment', 'rate']
+

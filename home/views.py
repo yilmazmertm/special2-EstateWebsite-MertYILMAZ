@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.contrib import messages
 
 # Create your views here.
-from home.forms import SearchForm, SignUpForm
+from home.forms import SearchForm, SignUpForm, AddEstateForm
 from home.models import Setting, ContactFormMessage, ContactFormu
 from product.models import Product, Category, Images, Comment
 
@@ -25,7 +25,7 @@ def index(request):
 def aboutus(request):
     setting = Setting.objects.get(pk=1)
     category = Category.objects.all()
-    context = {'category': category,'setting': setting, 'page': 'aboutus'}
+    context = {'category': category, 'setting': setting, 'page': 'aboutus'}
     return render(request, 'aboutus.html', context)
 
 
@@ -54,8 +54,6 @@ def contact(request):
     form = ContactFormu()
     context = {'category': category, 'setting': setting, 'form': form}
     return render(request, 'contact.html', context)
-
-
 
 
 def category_products(request, id, slug):
@@ -152,3 +150,66 @@ def signup_view(request):
     category = Category.objects.all()
     context = {'category': category, 'form': form}
     return render(request, 'signup.html', context)
+
+
+def add(request):
+    if request.method == 'POST':
+        form = AddEstateForm(request.POST, request.FILES)
+        if form.is_valid():
+            current_user = request.user
+            data = Product()
+            data.user_id = current_user.id
+            data.category = form.cleaned_data['category']
+            data.title = form.cleaned_data['title']
+            data.keywords = form.cleaned_data['keywords']
+            data.description = form.cleaned_data['description']
+            data.price = form.cleaned_data['price']
+            data.image = form.cleaned_data['image']
+            data.m2 = form.cleaned_data['m2']
+            data.room_number = form.cleaned_data['room_number']
+            data.age_of_building = form.cleaned_data['age_of_building']
+            data.city = form.cleaned_data['city']
+            data.detail = form.cleaned_data['detail']
+            data.slug = str(data.category_id) + str(data.title) + str(data.price)
+            data.status = 'False'
+            data.save()
+            messages.success(request, 'Your content is inserted')
+            return HttpResponseRedirect('/add')
+        else:
+            messages.success(request, 'Form Error: ' + str(form.errors))
+            return HttpResponseRedirect('/')
+    else:
+        category = Category.objects.all()
+        form = AddEstateForm
+        context = {
+            'category': category,
+            'form': form
+        }
+        return render(request, 'add.html', context)
+
+
+def edit(request, id):
+    product = Product.objects.get(id=id)
+    if request.method == 'POST':
+        form = AddEstateForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your Content is updated')
+            return HttpResponseRedirect('/user/list_estate')
+        else:
+            messages.success(request, 'Form Error: ' + str(form.errors))
+            return HttpResponseRedirect('/edit/' + str(id))
+    else:
+        category = Category.objects.all()
+        form = AddEstateForm(instance= product)
+        context = {
+            'category': category,
+            'form': form
+        }
+        return render(request, 'add.html', context)
+
+def delete(request, id):
+    current_user = request.user
+    Product.objects.filter(id=id, user_id= current_user.id).delete()
+    messages.success(request, 'Satılık ev ilanı kaldırıldı')
+    return HttpResponseRedirect('/user/list_estate')

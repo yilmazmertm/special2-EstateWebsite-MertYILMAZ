@@ -6,7 +6,7 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 from home.models import UserProfile
-from product.models import Category
+from product.models import Category, Product
 from home.views import login_view
 from user.forms import UserUpdateForm, ProfileUpdateForm
 
@@ -34,12 +34,12 @@ def user_update(request):
     else:
         category = Category.objects.all()
         current_user = request.user
-        user_form = UserUpdateForm(instance= request.user)
+        user_form = UserUpdateForm(instance=request.user)
         profile_form = ProfileUpdateForm(instance=request.user.userprofile)
         context = {
             'category': category,
             'user_form': user_form,
-            'profile_form':profile_form
+            'profile_form': profile_form
         }
         return render(request, 'user_update.html', context)
 
@@ -53,8 +53,8 @@ def change_password(request):
             messages.success(request, 'Your Password is updated')
             return redirect('change_password')
         else:
-            messages.error(request, 'Please Correct the error')
-            return HttpResponse('/user/password')
+            messages.error(request, 'Please Correct the error. <br>' + str(form.errors))
+            return redirect('/user/password')
     else:
         category = Category.objects.all()
         form = PasswordChangeForm(request.user)
@@ -64,3 +64,27 @@ def change_password(request):
         }
         return render(request, 'change_password.html', context)
 
+
+def list_estate_waiting(request):
+    return render(request, 'user_estate_waiting.html')
+
+
+def list_estate(request):
+    category = Category.objects.all()
+    current_user = request.user
+    products = Product.objects.filter(user_id=current_user.id, status='True')
+    context = {
+        'category': category,
+        'products': products
+    }
+    return render(request, 'user_estate.html', context)
+
+def list_estate_waiting(request):
+    category = Category.objects.all()
+    current_user = request.user
+    products = Product.objects.filter(user_id=current_user.id, status='False')
+    context = {
+        'category': category,
+        'products': products
+    }
+    return render(request, 'user_estate_waiting.html', context)
