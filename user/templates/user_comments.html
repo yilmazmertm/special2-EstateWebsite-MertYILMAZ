@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
                         <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Blank Page</span>
+                        <span>Yorumlarím</span>
                     </div>
                 </div>
             </div>
@@ -31,25 +31,30 @@
                         <table>
                             <thead>
                             <tr>
-                                <th>Image</th>
-                                <th class="p-name">İsim</th>
-                                <th>Fiyat</th>
-                                <th>Şehir</th>
-                                <th><i class="ti-save"></i></th>
+                                <th class="p-name">Emlak ismi</th>
+                                <th class="p-name">Konu</th>
+                                <th class="p-name">Rate</th>
+                                <th class="p-name">Yorum</th>
                                 <th><i class="ti-close"></i></th>
+
                             </tr>
                             </thead>
                             <tbody>
-                            {% for rs in products %}
+                            {% for rs in comments %}
                                 <tr>
-                                    <td class="cart-pic first-row"><img src="{{ rs.image.url}}" alt="" style="height: 50px; width: 50px"></td>
-                                    <td class="cart-title first-row">
-                                        <h5>{{ rs.title }}</h5>
+                                    <td class="cart-title ">
+                                        <h5>{{ rs.product.title }}</h5>
                                     </td>
-                                    <td class="p-price first-row">{{rs.price}} bin TL</td>
-                                    <td class="total-price first-row">{{rs.city}}</td>
-                                    <td class="total-price first-row"><a href="/edit/{{ rs.id }}" class="primary-btn up-cart">Güncelle</a></td>
-                                    <td class="total-price first-row"><a href="/delete/{{ rs.id }}" class="primary-btn up-cart">Sil</a></td>
+                                    <td class="cart-title ">
+                                        <h5>{{ rs.subject }}</h5>
+                                    </td>
+                                    <td class="cart-title ">
+                                        <h5>{{ rs.rate }}</h5>
+                                    </td>
+                                    <td class="cart-title ">
+                                        <h5>{{ rs.comment }}</h5>
+                                    </td>
+                                    <td class="total-price first-row"><a href="/user/deletecomment/{{ rs.id }}" onclick="return confirm('Yorumu silmek istediğinizden emin misiniz?')" class="primary-btn up-cart">Sil</a></td>
                                 </tr>
                             {% endfor %}
                             </tr>

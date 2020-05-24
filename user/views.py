@@ -1,12 +1,12 @@
 from django.contrib import messages
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.forms import PasswordChangeForm
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 
 # Create your views here.
 from home.models import UserProfile
-from product.models import Category, Product
+from product.models import Category, Product, Comment
 from home.views import login_view
 from user.forms import UserUpdateForm, ProfileUpdateForm
 
@@ -65,10 +65,6 @@ def change_password(request):
         return render(request, 'change_password.html', context)
 
 
-def list_estate_waiting(request):
-    return render(request, 'user_estate_waiting.html')
-
-
 def list_estate(request):
     category = Category.objects.all()
     current_user = request.user
@@ -79,6 +75,7 @@ def list_estate(request):
     }
     return render(request, 'user_estate.html', context)
 
+
 def list_estate_waiting(request):
     category = Category.objects.all()
     current_user = request.user
@@ -88,3 +85,21 @@ def list_estate_waiting(request):
         'products': products
     }
     return render(request, 'user_estate_waiting.html', context)
+
+
+def comments(request):
+    category = Category.objects.all()
+    current_user = request.user
+    comments = Comment.objects.filter(user_id=current_user.id, status='True')
+    context = {
+        'category': category,
+        'comments': comments
+    }
+    return render(request, 'user_comments.html', context)
+
+
+def deletecomment(request, id):
+    current_user = request.user
+    Comment.objects.filter(id=id, user_id=current_user.id).delete()
+    messages.success(request, 'Yorumunuz başarı ile silindi.')
+    return HttpResponseRedirect('/user/comments')
