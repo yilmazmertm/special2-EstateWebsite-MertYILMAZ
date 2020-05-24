@@ -9,7 +9,7 @@ from django.contrib import messages
 
 # Create your views here.
 from home.forms import SearchForm, SignUpForm, AddEstateForm, AddEstateImages
-from home.models import Setting, ContactFormMessage, ContactFormu
+from home.models import Setting, ContactFormMessage, ContactFormu, FAQ
 from product.models import Product, Category, Images, Comment
 
 
@@ -231,3 +231,13 @@ def delete(request, id):
     Product.objects.filter(id=id, user_id=current_user.id).delete()
     messages.success(request, 'Satılık ev ilanı kaldırıldı')
     return HttpResponseRedirect('/user/list_estate')
+
+
+def faq(request):
+    category = Category.objects.all()
+    faq = FAQ.objects.all().order_by('ordernumber')
+    context = {
+        'category':category,
+        'faq':faq
+    }
+    return render(request, 'faq.html', context)

@@ -187,11 +187,12 @@
 
                     <li><a href="{% url 'add' %}">Hemen Sat</a>
 
-                    <li><a href="#">Pages</a>
+                    <li><a href="{% url 'index' %}">Bilgilendirme</a>
                         <ul class="dropdown">
                             <li><a href="{% url 'contact' %}">İletişim</a></li>
                             <li><a href="{% url 'referances' %}">Referanslar </a></li>
                             <li><a href="{% url 'aboutus' %}">Hakkımızda </a></li>
+                            <li><a href="{% url 'faq' %}">Sıkça Sorulan Sorular </a></li>
                         </ul>
                     </li>
                     <li><a href="{% url 'user_index' %}">My Account</a>
