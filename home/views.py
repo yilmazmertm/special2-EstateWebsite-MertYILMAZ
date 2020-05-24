@@ -1,9 +1,10 @@
 import json
+import random
 
 from django.contrib.auth import logout, authenticate, login
 from django.forms import modelformset_factory
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 
 # Create your views here.
@@ -152,12 +153,14 @@ def signup_view(request):
     context = {'category': category, 'form': form}
     return render(request, 'signup.html', context)
 
+def get_random():
+    return int(1000*random.random())
 
 def add(request):
-    ImageFormSet = modelformset_factory(Images, fields=('image',), extra=5)
+    ImageFormSet = modelformset_factory(Images, fields=('image',), extra=4)
     if request.method == 'POST':
         form = AddEstateForm(request.POST, request.FILES)
-        formset = ImageFormSet(request.POST, request.FILES)
+        formset = ImageFormSet(request.POST or None, request.FILES or None)
         if form.is_valid() and formset.is_valid():
             current_user = request.user
             data = Product()
@@ -173,16 +176,18 @@ def add(request):
             data.age_of_building = form.cleaned_data['age_of_building']
             data.city = form.cleaned_data['city']
             data.detail = form.cleaned_data['detail']
-            data.slug = str(data.category_id) + str(data.title) + str(data.price)
             data.status = 'False'
+            data.slug = str(data.category_id) + str(get_random()) + str(get_random())
+            data.save()
             for f in formset:
                 try:
-                    photo = Images(product= product, title=str(id) + 'hello', image=f.cleaned_data['image'])
+                    photo = Images()
+                    photo.product_id = data.id
+                    photo.image = f.cleaned_data['image']
+                    photo.title = str(data.category_id) + str(data.title) + str(get_random())
                     photo.save()
                 except Exception as e:
                     break
-
-            data.save()
             messages.success(request, 'Your content is inserted')
             return HttpResponseRedirect('/add')
         else:

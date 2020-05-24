@@ -24,6 +24,7 @@ class SignUpForm(UserCreationForm):
 class AddEstateForm(ModelForm):
     class Meta:
         model = Product
+        exclude = ['slug']
         fields = ('category', 'title', 'keywords', 'description','image', 'price', 'm2', 'room_number', 'age_of_building',
                   'city', 'detail')
 

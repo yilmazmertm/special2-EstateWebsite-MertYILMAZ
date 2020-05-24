@@ -2,16 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56e7dcf2-8ec8-4893-81cd-1f604b0fc0c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uploads/images/1_zv8gMyA.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/7_mCD7HFn.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/7_wVf3ctW.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/7_xkuj87C.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/images/7_yF3yEyP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_FOYNiYC.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_M8N9NyW.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_OguFCBz.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_Rrlrb23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_SZW1AgD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_TX2nUd8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_UFlTz6J.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_c9mFcTh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_iD9inlk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1_k0AI9YF.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_7NXBzwt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_Cujracf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_DbJ6cbM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_Dmhb5W4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_HN4kdCE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_KmduIfE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_e6DaB22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_gGsmOVq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/2_tkS4QhD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/3_1psPEEY.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/3_BjKxGy2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/3_Mn8j9fe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/3_d5g8SEt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/3_py2zpiV.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/4_6iAxh8w.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/4_B8hC2I1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/4_vNvFD5D.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_0P5xvd0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_2zt3UFd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_5dqlx3W.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_GntzupV.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_NCg96HD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_Q9rW5Ye.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_RNZB3b5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_bmXk0Q1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_f9asAk4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_qcIAdDP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/5_yCyw38a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/6_9cye8VE.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/6_PYqb9XS.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/6_i6oMmNL.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/6_lPvZLKI.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/6_ut95gMM.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/6_wZuegxp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_EVr77Hu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_HD3VFwh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_LqTjfiU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_Zcx4JZF.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_b6jZzKP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_cm4U6zf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_jBTfJ7V.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_mQiqY9z.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/7_rUYTz2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/users/3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/product_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/product_search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +245,9 @@
       <workItem from="1589241861432" duration="430000" />
       <workItem from="1589269137512" duration="1501000" />
       <workItem from="1589292095020" duration="6806000" />
-      <workItem from="1590216987584" duration="18547000" />
+      <workItem from="1590216987584" duration="18578000" />
+      <workItem from="1590273094237" duration="3606000" />
+      <workItem from="1590311469406" duration="1458000" />
     </task>
     <task id="LOCAL-00001" summary="Header Değişti">
       <created>1585499746557</created>
@@ -336,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590254126622</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="image gallery eklemeye çalışıyorum">
+      <created>1590262877837</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1590262877837</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +423,8 @@
     <MESSAGE value="database crushed, deleted the entire database and create new migrations, user profile update and password change - vid 31" />
     <MESSAGE value="try" />
     <MESSAGE value="ev ekle, sil ve düzenle , çok fazla fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="ev ekle, sil ve düzenle , çok fazla fix" />
+    <MESSAGE value="image gallery eklemeye çalışıyorum" />
+    <option name="LAST_COMMIT_MESSAGE" value="image gallery eklemeye çalışıyorum" />
   </component>
   <component name="WindowStateProjectService">
     <state x="654" y="280" key="#Notifications" timestamp="1589300978517">
@@ -386,10 +447,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1585776413716" />
-    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2" timestamp="1590254125165">
+    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2" timestamp="1590262877222">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1590254125165" />
+    <state x="393" y="9" width="949" height="816" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1590262877222" />
     <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1589026307421" />
     <state x="744" y="147" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1589227183467" />
     <state x="491" y="12" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1588705691163" />
@@ -425,10 +486,10 @@
     <state x="317" y="120" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1589269657796" />
     <state x="317" y="124" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1589015531807" />
     <state x="638" y="127" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589226390504" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1590254134054">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1590262879273">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1590254134054" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1590262879273" />
     <state x="361" y="155" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1589026310855" />
     <state x="451" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1589227186497" />
     <state x="451" y="194" key="Vcs.Push.Dialog.v2/0.0.1920.1080@0.0.1920.1080" timestamp="1588705695551" />
