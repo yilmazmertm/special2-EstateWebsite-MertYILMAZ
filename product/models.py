@@ -42,17 +42,20 @@ class Category(MPTTModel):
 
 class Product(models.Model):
     STATUS = (('True', 'Evet'), ('False', 'Hayır'))
+    CITY = (('İstanbul', 'İstanbul'), ('Ankara', 'Ankara'),('İzmir', 'İzmir'),('Karabük', 'Karabük'),
+            ('Edirne', 'Edirne'), ('Aydın', 'Aydın'), ('Antalya', 'Antalya'), ('Kocaeli', 'Kocaeli'), ('Muğla', 'Muğla'))
+    ROOM = (('1+0', "1+0"), ('1+1', "1+1"), ('2+0', "2+0"), ('2+1', "2+1"), ('3+1', "3+1"), ('4+1', "4+1"), ('4+2', "4+2"),('5+2', "5+2"))
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=150)
     keywords = models.CharField(blank=True, max_length=255)
     description = models.CharField(blank=True, max_length=255)
     image = models.ImageField(blank=True, upload_to='images/')
-    price = models.FloatField(blank=True)
+    price = models.IntegerField(blank=True)
     m2 = models.IntegerField(blank=True)
-    room_number = models.IntegerField(blank=True)
+    room_number = models.CharField(blank=True, max_length=255, choices= ROOM)
     age_of_building = models.IntegerField(blank=True)
-    city = models.CharField(blank= True, max_length=255)
+    city = models.CharField(blank= True, max_length=255, choices= CITY)
     detail = RichTextUploadingField(blank=True)
     status = models.CharField(max_length=10, choices=STATUS)
     slug = models.SlugField(null= False, unique= True)

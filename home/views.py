@@ -2,6 +2,7 @@ import json
 import random
 
 from django.contrib.auth import logout, authenticate, login
+from django.contrib.auth.decorators import login_required
 from django.forms import modelformset_factory
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
@@ -9,18 +10,23 @@ from django.contrib import messages
 
 # Create your views here.
 from home.forms import SearchForm, SignUpForm, AddEstateForm, AddEstateImages
-from home.models import Setting, ContactFormMessage, ContactFormu, FAQ
+from home.models import Setting, ContactFormMessage, ContactFormu, FAQ, UserProfile
 from product.models import Product, Category, Images, Comment
 
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    sliderdata = Product.objects.all()[:4]
+    products = Product.objects.all()
+    sliderdata = Product.objects.filter(status= True)
     dayproducts = Product.objects.all()[:3]
     lastproducts = Product.objects.all().order_by('-id')[:3]
     category = Category.objects.all()
-    context = {'setting': setting, 'category': category, 'page': 'home', 'sliderdata': sliderdata,
-               'dayproducts': dayproducts, 'lastproducts': lastproducts}
+    context = {'setting': setting,
+               'category': category,
+               'products': products,
+               'sliderdata': sliderdata,
+               'dayproducts': dayproducts,
+               'lastproducts': lastproducts}
     return render(request, 'index.html', context)
 
 
@@ -60,19 +66,22 @@ def contact(request):
 
 def category_products(request, id, slug):
     category = Category.objects.all()
+    setting = Setting.objects.get(pk=1)
     categorydata = Category.objects.get(pk=id)
     products = Product.objects.filter(category_id=id)
-    context = {'products': products, 'category': category, 'categorydata': categorydata}
+    context = {'products': products, 'category': category, 'categorydata': categorydata, 'setting': setting}
     return render(request, 'products.html', context)
 
 
 def product_detail(request, id, slug):
     category = Category.objects.all()
+    setting = Setting.objects.get(pk=1)
     product = Product.objects.get(pk=id)
+    profile = UserProfile.objects.get(user_id=product.user)
     images = Images.objects.filter(product_id=id)
     comments = Comment.objects.filter(product_id=id, status='True')
     context = {'category': category, 'product': product,
-               'images': images, 'comments': comments}
+               'images': images, 'comments': comments, 'profile':profile, 'setting': setting}
     return render(request, 'product_detail.html', context)
 
 
@@ -134,7 +143,8 @@ def login_view(request):
             return HttpResponseRedirect('/login')
 
     category = Category.objects.all()
-    context = {'category': category}
+    setting = Setting.objects.get(pk=1)
+    context = {'category': category, 'setting': setting}
     return render(request, 'login.html', context)
 
 
@@ -150,12 +160,14 @@ def signup_view(request):
             return HttpResponseRedirect('/')
     form = SignUpForm()
     category = Category.objects.all()
-    context = {'category': category, 'form': form}
+    setting = Setting.objects.get(pk=1)
+    context = {'category': category, 'form': form, 'setting': setting}
     return render(request, 'signup.html', context)
 
 def get_random():
     return int(1000*random.random())
 
+@login_required(login_url = '/login')
 def add(request):
     ImageFormSet = modelformset_factory(Images, fields=('image',), extra=4)
     if request.method == 'POST':
@@ -195,37 +207,52 @@ def add(request):
             return HttpResponseRedirect('/')
     else:
         category = Category.objects.all()
+        setting = Setting.objects.get(pk=1)
         form = AddEstateForm
         formset = ImageFormSet(queryset=Images.objects.none())
         context = {
             'category': category,
             'form': form,
-            'formset': formset
+            'formset': formset,
+            'setting': setting
         }
         return render(request, 'add.html', context)
 
-
+@login_required(login_url = '/login')
 def edit(request, id):
     product = Product.objects.get(id=id)
+    ImageFormSet = modelformset_factory(Images, fields=('image',), extra=4)
     if request.method == 'POST':
+        formset = ImageFormSet(request.POST or None, request.FILES or None)
         form = AddEstateForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
+            for f in formset:
+                try:
+                    photo = Images()
+                    photo.title = str(get_random()) + str(get_random()) + str(get_random())
+                    photo.save()
+                except Exception as e:
+                    break
             messages.success(request, 'Your Content is updated')
             return HttpResponseRedirect('/user/list_estate')
         else:
             messages.success(request, 'Form Error: ' + str(form.errors))
             return HttpResponseRedirect('/edit/' + str(id))
     else:
+        formset = ImageFormSet(queryset=Images.objects.none())
         category = Category.objects.all()
+        setting = Setting.objects.get(pk=1)
         form = AddEstateForm(instance=product)
         context = {
             'category': category,
-            'form': form
+            'form': form,
+            'formset':formset,
+            'setting':setting
         }
         return render(request, 'add.html', context)
 
-
+@login_required(login_url = '/login')
 def delete(request, id):
     current_user = request.user
     Product.objects.filter(id=id, user_id=current_user.id).delete()
@@ -235,9 +262,22 @@ def delete(request, id):
 
 def faq(request):
     category = Category.objects.all()
+    setting = Setting.objects.get(pk=1)
     faq = FAQ.objects.all().order_by('ordernumber')
     context = {
         'category':category,
-        'faq':faq
+        'faq':faq,
+        'setting':setting
     }
     return render(request, 'faq.html', context)
+
+def allestates(request):
+    category = Category.objects.all()
+    setting = Setting.objects.get(pk=1)
+    products = Product.objects.filter(status= True)
+    context = {
+        'category': category,
+        'products':products,
+        'setting':setting
+    }
+    return render(request, 'allestates.html', context)

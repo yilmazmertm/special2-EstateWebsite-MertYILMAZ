@@ -1,7 +1,7 @@
 {% extends "homebase.html" %}
-{% block title  %} Blank Page - {{ setting.company }} {% endblock %}
-{% block keywords  %} Blank Page -{{ setting.keywords }} {% endblock %}
-{% block description  %} Blank Page -{{ setting.description }} {% endblock %}
+{% block title  %} Kullanıcı Yorumları - {{ setting.company }} {% endblock %}
+{% block keywords  %} Kullanıcı Yorumları - {{ setting.keywords }} {% endblock %}
+{% block description  %} Kullanıcı Yorumları - {{ setting.description }} {% endblock %}
 {% block head %}
     <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
 {% endblock %}
@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
-                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <a href="#"><i class="fa fa-home"></i> Ana Sayfa</a>
                         <span>Yorumlarím</span>
                     </div>
                 </div>
@@ -33,10 +33,9 @@
                             <tr>
                                 <th class="p-name">Emlak ismi</th>
                                 <th class="p-name">Konu</th>
-                                <th class="p-name">Rate</th>
+                                <th class="p-name">Puan</th>
                                 <th class="p-name">Yorum</th>
                                 <th><i class="ti-close"></i></th>
-
                             </tr>
                             </thead>
                             <tbody>
@@ -61,50 +60,8 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="cart-buttons">
-                                <a href="#" class="primary-btn continue-shop">Continue shopping</a>
-                                <a href="#" class="primary-btn up-cart">Update cart</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
-    <!-- Partner Logo Section Begin -->
-    <div class="partner-logo">
-        <div class="container">
-            <div class="logo-carousel owl-carousel">
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-1.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-2.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-3.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-4.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Partner Logo Section End -->
 {% endblock %}

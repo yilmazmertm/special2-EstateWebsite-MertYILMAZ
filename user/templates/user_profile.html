@@ -1,7 +1,7 @@
 {% extends "homebase.html" %}
-{% block title  %} User Profile - {{ setting.company }} {% endblock %}
-{% block keywords  %} User Profile -{{ setting.keywords }} {% endblock %}
-{% block description  %} User Profile -{{ setting.description }} {% endblock %}
+{% block title  %} Kullanıcı Profili - {{ setting.company }} {% endblock %}
+{% block keywords  %} Kullanıcı Profili -{{ setting.keywords }} {% endblock %}
+{% block description  %} Kullanıcı Profili -{{ setting.description }} {% endblock %}
 {% block head %}
     <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
 {% endblock %}
@@ -11,15 +11,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
-                        <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>User Profile</span>
+                        <a href="#"><i class="fa fa-home"></i> Ana Sayfa</a>
+                        <span>Kullanıcı Profili</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Breadcrumb Section Begin -->
-    <!-- Contact Section Begin -->
     <section class="contact-section spad">
         <div class="container">
             <div class="row">
@@ -27,11 +25,18 @@
                     {% include 'user_panel.html' %}
                 </div>
                 <div class="col-lg-9 order-1 order-lg-2">
+                    {% if messages %}
+                        <ul class="messages">
+                            {% for message in messages %}
+                                <li{% if message.tags %} class="warning" {% endif %}>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
                     <div class="product-list">
                         <div class="row">
                             <div class="col-lg-9">
                                 <div class="contact-title">
-                                    <h4>Profile Information</h4>
+                                    <h4>Profil Bilgisi</h4>
                                 </div>
                                 <div class="contact-widget">
                                     <div class="cw-item">
@@ -39,7 +44,7 @@
                                             <i class="ti-location-pin"></i>
                                         </div>
                                         <div class="ci-text">
-                                            <span>Name Surname</span>
+                                            <span>İsim Soyisim</span>
                                             <p>{{ profile.user.first_name}} {{ profile.user.last_name }}</p>
                                         </div>
                                     </div>
@@ -48,7 +53,7 @@
                                             <i class="ti-mobile"></i>
                                         </div>
                                         <div class="ci-text">
-                                            <span>Phone:</span>
+                                            <span>Telefon:</span>
                                             <p>{{ profile.phone}}</p>
                                         </div>
                                     </div>
@@ -66,7 +71,7 @@
                                             <i class="ti-email"></i>
                                         </div>
                                         <div class="ci-text">
-                                            <span>Profile Picture</span>
+                                            <span>Profil Resmi: </span>
                                             <p><img src="{{ profile.image.url }}" style="height: 150px; width: 100px"></p>
                                         </div>
                                     </div>
@@ -75,14 +80,14 @@
                                             <i class="ti-email"></i>
                                         </div>
                                         <div class="ci-text">
-                                            <span>Change Information</span>
+                                            <span>Bilgileri Değiştir</span>
                                             <p>
-                                            <tr>
-                                                <th class="text-left">
-                                                    <a href="/user/update" class="primary-btn">Update Profile</a>
-                                                    <a href="/user/password" class="primary-btn">Change Password</a>
-                                                </th>
-                                            </tr>
+                                                <tr>
+                                                    <th class="text-left">
+                                                        <a href="{% url 'user_update' %}" class="primary-btn">Bilgileri Güncelle</a>
+                                                        <a href="{% url 'change_password' %}" class="primary-btn">Şifreyi Değiştir</a>
+                                                    </th>
+                                                </tr>
                                             </p>
                                         </div>
                                     </div>
@@ -94,38 +99,4 @@
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
-    <!-- Partner Logo Section Begin -->
-    <div class="partner-logo">
-        <div class="container">
-            <div class="logo-carousel owl-carousel">
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-1.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-2.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-3.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-4.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Partner Logo Section End -->
 {% endblock %}

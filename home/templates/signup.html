@@ -1,7 +1,7 @@
 {% extends "homebase.html" %}
-{% block title  %} Sign Up - {{ setting.company }} {% endblock %}
-{% block keywords  %} Sign Up - {{ setting.keywords }} {% endblock %}
-{% block description  %} Sign Up - {{ setting.description }} {% endblock %}
+{% block title  %} Kayıt Ol - {{ setting.company }} {% endblock %}
+{% block keywords  %} Kayıt Ol - {{ setting.keywords }} {% endblock %}
+{% block description  %} Kayıt Ol - {{ setting.description }} {% endblock %}
 {% block head %}
 <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
 {% endblock %}
@@ -12,20 +12,18 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
                         <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Login Page</span>
+                        <span>Kayıt Ol</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Breadcrumb Section Begin -->
-    <!-- Contact Section Begin -->
     <section class="contact-section spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="login-form">
-                        <h2>User Register</h2>
+                        <h2>Kayıt Ol</h2>
                         {% if messages %}
                                 {% for message in messages %}
                                     <div class="alert-danger {{ message.tags }}" role="alert">
@@ -41,48 +39,14 @@
                                 <input type="{% if field.name == 'password1' or field.name == 'password2' %}password{% else %}text{% endif %}" id="{{ field.name }}" name="{{ field.name }}">
                             </div>
                             {% endfor %}
-                            <button type="submit" class="site-btn login-btn">Sign Up</button>
+                            <button type="submit" class="site-btn login-btn">Kayıt Ol</button>
                         </form>
                         <div class="switch-login">
-                            <a href="./register.html" class="or-login">Or Create An Account</a>
+                            <a href="{% url 'login_view' %}" class="or-login">Ya da Giriş Yap</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
-    <!-- Partner Logo Section Begin -->
-    <div class="partner-logo">
-        <div class="container">
-            <div class="logo-carousel owl-carousel">
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-1.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-2.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-3.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-4.png" alt="">
-                    </div>
-                </div>
-                <div class="logo-item">
-                    <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Partner Logo Section End -->
 {% endblock %}

@@ -1,14 +1,10 @@
 {% extends "homebase.html" %}
-
-{% block title  %} Hakkımızda - {{ setting.company }} {% endblock %}
+{% block title  %} İlan Arama - {{ setting.company }} {% endblock %}
 {% block keywords  %} {{ setting.keywords }} {% endblock %}
 {% block description  %} {{ setting.description }} {% endblock %}
-
 {% block head %}
     <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}' />
 {% endblock %}
-
-
 {% block body  %}
     <div class="breacrumb-section">
         <div class="container">
@@ -16,16 +12,12 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
                         <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>About Us</span>
+                        <span>İlanlarımız</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Breadcrumb Section Begin -->
-
-
-
     <!-- Contact Section Begin -->
     <section class="contact-section spad">
         <div class="container">
@@ -43,13 +35,13 @@
                                 <a href="/product/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" style="width: 40px ; height: 40px"></a>
                             </td>
                             <td>
-                                <h4 class="product-content"><a href="/product/{{ rs.id }}/{{ rs.slug }}"> {{ rs.title }}</a></h4>
+                                <h5 class="product-content"><a href="/product/{{ rs.id }}/{{ rs.slug }}"> {{ rs.title }}</a></h5>
                             </td>
                             <td>
                                 <a href="/category/{{ rs.category.id }}/{{ rs.category.slug }}">{{ rs.category.title }}</a>
                             </td>
                             <td>
-                                <h4 >{{ rs.price }} TL </h4>
+                                <h4 >{{ rs.price }}.000 TL </h4>
                             </td>
                         </tr>
                     {% endfor %}

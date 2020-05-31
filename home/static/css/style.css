@@ -154,8 +154,10 @@ ol {
 }
 
 .set-bg {
+	height: 191px
+	width: 52px;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 1919px 525px;
 	background-position: top center;
 }
 

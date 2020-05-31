@@ -1,29 +1,24 @@
 {% load static %}
-<!-- Hero Section Begin -->
 <section class="hero-section">
     <div class="hero-items owl-carousel">
-
-        <!-- banner -->
         {% for rs in sliderdata %}
-        <div class="single-hero-items set-bg" data-setbg="{{ rs.image.url }}">
-            <div class="container">
-                <div class="row">
+            <div style="padding-top: 100px; padding-bottom: 100px; background: #FFF8E8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <a href="/product/{{ rs.id }}/{{ rs.slug }}"><img src="{{ rs.image.url }}" style="height: 400px; width: max-content"></a>
+                        </div>
+                        <div class="col-lg-1">
 
-                    <div class="col-lg-5">
-                        <span>{{ rs.description }}</span>
-                        <h1>{{ rs.title }}</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore</p>
-                        <a href="/product/{{ rs.id }}/{{ rs.slug }}" class="primary-btn">SATIN AL</a>
+                        </div>
+                        <div class="col-lg-3">
+                            <h2>{{ rs.title}}</h2>
+                            <p>{{ rs.description}}</p>
+                            <a href="/product/{{ rs.id }}/{{ rs.slug }}" class="primary-btn">Detaylı İncele</a>
+                        </div>
                     </div>
                 </div>
-                <div class="off-card">
-                    <h2>Sale <span>50%</span></h2>
-                </div>
             </div>
-        </div>
         {% endfor %}
-        <!-- banner -->
     </div>
 </section>
-<!-- Hero Section End -->

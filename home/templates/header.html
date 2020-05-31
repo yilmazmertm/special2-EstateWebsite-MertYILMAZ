@@ -12,31 +12,23 @@
             <div class="ht-left">
                 <div class="mail-service">
                     <i class=" fa fa-envelope"></i>
-                    hello.colorlib@gmail.com
+                    hemenevim@gmail.com
                 </div>
                 <div class="phone-service">
                     <i class=" fa fa-phone"></i>
-                    +65 11.188.888
+                    +0 532 166 68-97
                 </div>
             </div>
             <div class="ht-right">
 
                 {% if user.id is not None %}
-                <a href="#" class="login-panel"><i class="fa fa-user"></i>{{ user.first_name }}</a>
+                    <a href="{% url 'user_index' %}" class="login-panel"><i class="fa fa-user"></i>{{ user.first_name }}</a>
                     <a href="{% url 'logout_view' %}" class="login-panel"><i class="glyphicon-log-out"></i>Logout</a>
                 {% else %}
-                    <a href="/signup/" class="login-panel"><i class="fa fa-user"></i>Sign up !</a>
-                <a href="/login/" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                    <a href="{% url 'signup_view' %}" class="login-panel"><i class="fa fa-user"></i>Kayıt Ol !</a>
+                    <a href="{% url 'login_view' %}" class="login-panel"><i class="fa fa-user"></i>Giriş Yap</a>
                 {% endif %}
 
-                <div class="lan-selector">
-                    <select class="language_drop" name="countries" id="countries" style="width:300px;">
-                        <option value='yt' data-image="img/flag-1.jpg" data-imagecss="flag yt"
-                                data-title="English">English</option>
-                        <option value='yu' data-image="img/flag-2.jpg" data-imagecss="flag yu"
-                                data-title="Bangladesh">German </option>
-                    </select>
-                </div>
                 <div class="top-social">
                     <a href="#"><i class="ti-facebook"></i></a>
                     <a href="#"><i class="ti-twitter-alt"></i></a>
@@ -51,7 +43,7 @@
                 <div class="col-lg-2 col-md-2">
                     <div class="logo">
                         <a href="{% url 'index' %}">
-                            <img src="{% static 'img/logo.png' %}" alt="">
+                            <img src="{% static 'images/logohemen.png' %}" style="height: 55px; width: 88px">
                         </a>
                     </div>
                 </div>
@@ -98,63 +90,6 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-3 text-right col-md-3">
-                    <ul class="nav-right">
-                        <li class="heart-icon">
-                            <a href="#">
-                                <i class="icon_heart_alt"></i>
-                                <span>1</span>
-                            </a>
-                        </li>
-                        <li class="cart-icon">
-                            <a href="#">
-                                <i class="icon_bag_alt"></i>
-                                <span>3</span>
-                            </a>
-                            <div class="cart-hover">
-                                <div class="select-items">
-                                    <table>
-                                        <tbody>
-                                        <tr>
-                                            <td class="si-pic"><img src="{% static 'img/select-product-1.jpg'%}" alt=""></td>
-                                            <td class="si-text">
-                                                <div class="product-selected">
-                                                    <p>$60.00 x 1</p>
-                                                    <h6>Kabino Bedside Table</h6>
-                                                </div>
-                                            </td>
-                                            <td class="si-close">
-                                                <i class="ti-close"></i>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="si-pic"><img src="{% static 'img/select-product-2.jpg'%}" alt=""></td>
-                                            <td class="si-text">
-                                                <div class="product-selected">
-                                                    <p>$60.00 x 1</p>
-                                                    <h6>Kabino Bedside Table</h6>
-                                                </div>
-                                            </td>
-                                            <td class="si-close">
-                                                <i class="ti-close"></i>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="select-total">
-                                    <span>total:</span>
-                                    <h5>$120.00</h5>
-                                </div>
-                                <div class="select-button">
-                                    <a href="#" class="primary-btn view-card">VIEW CARD</a>
-                                    <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="cart-price">$150.00</li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
@@ -182,7 +117,7 @@
             <nav class="nav-menu mobile-menu">
                 <ul>
                     <li class="active"><a href="{% url 'index' %}">Anasayfa</a></li>
-                    <li><a href="./shop.html">Shop</a></li>
+                    <li><a href="{% url 'allestates' %}">İlanlar</a></li>
 
 
                     <li><a href="{% url 'add' %}">Hemen Sat</a>
@@ -195,8 +130,8 @@
                             <li><a href="{% url 'faq' %}">Sıkça Sorulan Sorular </a></li>
                         </ul>
                     </li>
-                    <li><a href="{% url 'user_index' %}">My Account</a>
-                    <ul class="dropdown">
+                    <li><a href="{% url 'user_index' %}">Hesabım</a>
+                        <ul class="dropdown">
                             <li><a href="{% url 'logout_view' %}">Logout</a></li>
                         </ul>
                     </li>
@@ -206,4 +141,3 @@
         </div>
     </div>
 </header>
-<!-- Header End -->
