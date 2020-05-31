@@ -14,28 +14,21 @@
                     <h2> Yeni Eklenen İlanlar </h2>
                 </div>
                 <div class="product-slider owl-carousel">
-                    {% for rs in dayproducts %}
+                    {% for rs in lastproducts %}
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="{{ rs.image.url }}" alt="">
-                                <div class="sale">Sale</div>
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
+                                <img src="{{rs.image.url}}" style="height: 310px; width: 270px;">
                                 <ul>
-                                    <li class="w-icon active"><a href="/product/{{ rs.id }}/{{ rs.slug }}"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="/product/{{ rs.id }}/{{ rs.slug }}">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="quick-view"><a href="/product/{{ rs.id }}/{{ rs.slug }}">Hemen İncele</a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
+                                <div class="catagory-name">{{ rs.category }} | {{ rs.city }}</div>
                                 <a href="#">
                                     <h5>{{ rs.title }}</h5>
                                 </a>
                                 <div class="product-price">
-                                    ${{rs.price}}
-                                    <span>$35.00</span>
+                                    {{rs.price}}.000 TL
                                 </div>
                             </div>
                         </div>
@@ -52,31 +45,25 @@
             <div class="col-lg-8">
                 <div class="filter-control">
                     <ul>
-                        <h2> Fırsatları Kaçırmayın </h2>
+                        <h2> Rastgele İlanlar </h2>
                     </ul>
                 </div>
                 <div class="product-slider owl-carousel">
-                    {% for rs in lastproducts %}
+                    {% for rs in randomproducts %}
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="{{rs.image.url}}" alt="">
-                                <div class="sale">Sale</div>
-                                <div class="icon">
-                                    <i class="icon_heart_alt"></i>
-                                </div>
+                                <img src="{{rs.image.url}}" style="height: 310px; width: 270px;">
                                 <ul>
-                                    <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                    <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                    <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
+                                    <li class="quick-view"><a href="/product/{{ rs.id }}/{{ rs.slug }}">Hemen İncele</a></li>
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
+                                <div class="catagory-name">{{ rs.category }} | {{ rs.city }}</div>
                                 <a href="#">
                                     <h5>{{rs.title}}</h5>
                                 </a>
                                 <div class="product-price">
-                                    ${{rs.price}}
+                                    {{rs.price}}.000 TL
                                 </div>
                             </div>
                         </div>
@@ -85,7 +72,7 @@
             </div>
             <div class="col-lg-3 offset-lg-1">
                 <div class="product-large set-bg m-large" data-setbg="{% static 'images/yenikategori.jpg' %}">
-                    <h2> Yeni Eklenen Evler </h2>
+                    <h2> Rasgele İlanlar </h2>
                     <a href="#">Keşfet</a>
                 </div>
             </div>
@@ -94,7 +81,7 @@
 </section>
 <!-- Instagram Section Begin -->
 <div class="instagram-photo">
-    {% for rs in products %}
+    {% for rs in endofthepageproducts %}
     <div class="insta-item set-bg" data-setbg="{{ rs.image.url }}">
         <div class="inside-text">
             <i class="ti-check"></i>

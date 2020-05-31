@@ -31,26 +31,26 @@
                         <table>
                             <thead>
                             <tr>
-                                <th class="p-name">Emlak ismi</th>
-                                <th class="p-name">Konu</th>
-                                <th class="p-name">Puan</th>
-                                <th class="p-name">Yorum</th>
+                                <th>Emlak ismi</th>
+                                <th>Konu</th>
+                                <th>Puan</th>
+                                <th>Yorum</th>
                                 <th><i class="ti-close"></i></th>
                             </tr>
                             </thead>
                             <tbody>
                             {% for rs in comments %}
                                 <tr>
-                                    <td class="cart-title ">
+                                    <td>
                                         <h5>{{ rs.product.title }}</h5>
                                     </td>
-                                    <td class="cart-title ">
+                                    <td>
                                         <h5>{{ rs.subject }}</h5>
                                     </td>
-                                    <td class="cart-title ">
+                                    <td>
                                         <h5>{{ rs.rate }}</h5>
                                     </td>
-                                    <td class="cart-title ">
+                                    <td>
                                         <h5>{{ rs.comment }}</h5>
                                     </td>
                                     <td class="total-price first-row"><a href="/user/deletecomment/{{ rs.id }}" onclick="return confirm('Yorumu silmek istediğinizden emin misiniz?')" class="primary-btn up-cart">Sil</a></td>

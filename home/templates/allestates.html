@@ -44,7 +44,7 @@
                             <div class="col-lg-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="pi-pic">
-                                        <img src="{{ rs.image.url }}" alt="">
+                                        <img src="{{ rs.image.url }}" style="height: 310px; width: 270px;">
                                         <div class="sale pp-sale">Avantajlı</div>
                                         <div class="icon">
                                             <i class="icon_heart_alt"></i>
@@ -54,8 +54,8 @@
                                         </ul>
                                     </div>
                                     <div class="pi-text">
-                                        <div class="catagory-name">{{ rs.category }}</div>
-                                        <a href="#">
+                                        <div class="catagory-name">{{ rs.category }} | {{ rs.city }}</div>
+                                        <a href="/product/{{ rs.id }}/{{ rs.slug }}">
                                             <h5>{{ rs.title }}</h5>
                                         </a>
                                         <div class="product-price">

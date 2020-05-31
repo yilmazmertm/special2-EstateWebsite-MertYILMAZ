@@ -16,17 +16,19 @@ from product.models import Product, Category, Images, Comment
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    products = Product.objects.all()
-    sliderdata = Product.objects.filter(status= True)
-    dayproducts = Product.objects.all()[:3]
-    lastproducts = Product.objects.all().order_by('-id')[:3]
+    products = Product.objects.filter(status= True)
+    sliderdata = Product.objects.filter(status= True).order_by('price')[:6]
+    randomproducts = Product.objects.filter(status= True)[:6]
+    endofthepageproducts = Product.objects.filter(status=True).order_by('title')[:6]
+    lastproducts = Product.objects.filter(status= True).order_by('-id')[:6]
     category = Category.objects.all()
     context = {'setting': setting,
                'category': category,
                'products': products,
                'sliderdata': sliderdata,
-               'dayproducts': dayproducts,
-               'lastproducts': lastproducts}
+               'randomproducts': randomproducts,
+               'lastproducts': lastproducts,
+               'endofthepageproducts': endofthepageproducts}
     return render(request, 'index.html', context)
 
 
@@ -68,7 +70,7 @@ def category_products(request, id, slug):
     category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
     categorydata = Category.objects.get(pk=id)
-    products = Product.objects.filter(category_id=id)
+    products = Product.objects.filter(category_id=id, status= True)
     context = {'products': products, 'category': category, 'categorydata': categorydata, 'setting': setting}
     return render(request, 'products.html', context)
 
@@ -169,7 +171,7 @@ def get_random():
 
 @login_required(login_url = '/login')
 def add(request):
-    ImageFormSet = modelformset_factory(Images, fields=('image',), extra=4)
+    ImageFormSet = modelformset_factory(Images, fields=('image',), extra=6)
     if request.method == 'POST':
         form = AddEstateForm(request.POST, request.FILES)
         formset = ImageFormSet(request.POST or None, request.FILES or None)
