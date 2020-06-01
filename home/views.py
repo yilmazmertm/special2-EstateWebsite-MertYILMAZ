@@ -1,6 +1,5 @@
 import json
 import random
-
 from django.contrib.auth import logout, authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.forms import modelformset_factory
@@ -16,11 +15,11 @@ from product.models import Product, Category, Images, Comment
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    products = Product.objects.filter(status= True)
-    sliderdata = Product.objects.filter(status= True).order_by('price')[:6]
-    randomproducts = Product.objects.filter(status= True)[:6]
+    products = Product.objects.filter(status=True)
+    sliderdata = Product.objects.filter(status=True).order_by('price')[:6]
+    randomproducts = Product.objects.filter(status=True)[:6]
     endofthepageproducts = Product.objects.filter(status=True).order_by('title')[:6]
-    lastproducts = Product.objects.filter(status= True).order_by('-id')[:6]
+    lastproducts = Product.objects.filter(status=True).order_by('-id')[:6]
     category = Category.objects.all()
     context = {'setting': setting,
                'category': category,
@@ -70,7 +69,7 @@ def category_products(request, id, slug):
     category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
     categorydata = Category.objects.get(pk=id)
-    products = Product.objects.filter(category_id=id, status= True)
+    products = Product.objects.filter(category_id=id, status=True)
     context = {'products': products, 'category': category, 'categorydata': categorydata, 'setting': setting}
     return render(request, 'products.html', context)
 
@@ -83,7 +82,7 @@ def product_detail(request, id, slug):
     images = Images.objects.filter(product_id=id)
     comments = Comment.objects.filter(product_id=id, status='True')
     context = {'category': category, 'product': product,
-               'images': images, 'comments': comments, 'profile':profile, 'setting': setting}
+               'images': images, 'comments': comments, 'profile': profile, 'setting': setting}
     return render(request, 'product_detail.html', context)
 
 
@@ -166,10 +165,12 @@ def signup_view(request):
     context = {'category': category, 'form': form, 'setting': setting}
     return render(request, 'signup.html', context)
 
-def get_random():
-    return int(1000*random.random())
 
-@login_required(login_url = '/login')
+def get_random():
+    return int(1000 * random.random())
+
+
+@login_required(login_url='/login')
 def add(request):
     ImageFormSet = modelformset_factory(Images, fields=('image',), extra=6)
     if request.method == 'POST':
@@ -220,7 +221,8 @@ def add(request):
         }
         return render(request, 'add.html', context)
 
-@login_required(login_url = '/login')
+
+@login_required(login_url='/login')
 def edit(request, id):
     product = Product.objects.get(id=id)
     ImageFormSet = modelformset_factory(Images, fields=('image',), extra=4)
@@ -249,12 +251,13 @@ def edit(request, id):
         context = {
             'category': category,
             'form': form,
-            'formset':formset,
-            'setting':setting
+            'formset': formset,
+            'setting': setting
         }
         return render(request, 'add.html', context)
 
-@login_required(login_url = '/login')
+
+@login_required(login_url='/login')
 def delete(request, id):
     current_user = request.user
     Product.objects.filter(id=id, user_id=current_user.id).delete()
@@ -267,19 +270,20 @@ def faq(request):
     setting = Setting.objects.get(pk=1)
     faq = FAQ.objects.all().order_by('ordernumber')
     context = {
-        'category':category,
-        'faq':faq,
-        'setting':setting
+        'category': category,
+        'faq': faq,
+        'setting': setting
     }
     return render(request, 'faq.html', context)
+
 
 def allestates(request):
     category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
-    products = Product.objects.filter(status= True)
+    products = Product.objects.filter(status=True)
     context = {
         'category': category,
-        'products':products,
-        'setting':setting
+        'products': products,
+        'setting': setting
     }
     return render(request, 'allestates.html', context)
