@@ -122,7 +122,7 @@
 
                     <li><a href="{% url 'add' %}">Hemen Sat</a>
 
-                    <li><a href="{% url 'index' %}">Bilgilendirme</a>
+                    <li><a href="{% url 'index' %}">BİLGİLENDİRME</a>
                         <ul class="dropdown">
                             <li><a href="{% url 'contact' %}">İletişim</a></li>
                             <li><a href="{% url 'referances' %}">Referanslar </a></li>
@@ -131,9 +131,12 @@
                         </ul>
                     </li>
                     <li><a href="{% url 'user_index' %}">Hesabım</a>
+                        {% if user.id is not None %}
                         <ul class="dropdown">
                             <li><a href="{% url 'logout_view' %}">Logout</a></li>
                         </ul>
+                        {% else %}
+                        {% endif %}
                     </li>
                 </ul>
             </nav>

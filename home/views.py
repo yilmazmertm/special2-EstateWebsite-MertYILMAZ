@@ -94,9 +94,9 @@ def product_search(request):
             query = form.cleaned_data['query']
             catid = form.cleaned_data['catid']
             if catid == 0:
-                products = Product.objects.filter(title__icontains=query)
+                products = Product.objects.filter(title__icontains=query, status= True)
             else:
-                products = Product.objects.filter(title__icontains=query, category_id=catid)
+                products = Product.objects.filter(title__icontains=query, category_id=catid, status= True)
 
             context = {'products': products, 'category': category}
             return render(request, 'product_search.html', context)
@@ -106,7 +106,7 @@ def product_search(request):
 def product_search_auto(request):
     if request.is_ajax():
         q = request.GET.get('term', '')
-        product = Product.objects.filter(title__icontains=q)
+        product = Product.objects.filter(title__icontains=q, status= True)
         results = []
         for rs in product:
             product_json = {}
@@ -158,6 +158,11 @@ def signup_view(request):
             password = form.cleaned_data.get('password1')
             user = authenticate(request, username=username, password=password)
             login(request, user)
+            current_user = request.user
+            data = UserProfile()
+            data.user_id = current_user.id
+            data.image = "images/users/user_h4IyN9d.jpg"
+            data.save()
             return HttpResponseRedirect('/')
     form = SignUpForm()
     category = Category.objects.all()
@@ -268,7 +273,7 @@ def delete(request, id):
 def faq(request):
     category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
-    faq = FAQ.objects.all().order_by('ordernumber')
+    faq = FAQ.objects.filter(status=True).order_by('ordernumber')
     context = {
         'category': category,
         'faq': faq,
