@@ -3,7 +3,7 @@
 
 # There are a lot pages involved in this project, I will add the few to show, for detailed view you can clone the repo.
 
-# HOME PAGE
+# Home Page
 
 ![](images_for_read/1.png)
 
