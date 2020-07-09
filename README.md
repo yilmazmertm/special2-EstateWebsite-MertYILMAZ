@@ -41,4 +41,4 @@
 
 # Detailed Information about the estate
 
-![](images_for_read/10.png)
+![](images_for_read/10.PNG)
